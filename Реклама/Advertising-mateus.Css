@@ -1,0 +1,207 @@
+/* Swiper */
+.swiper-button-next {
+  left: 80%;
+}
+.swiper-button-prev {
+  left: 20%;
+}
+.swiper {
+  width: calc(400px + 300 * (100vw / 1200));
+  height: 100%;
+}
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+/* Different */
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(./Imgs-mateus/Background.jpg);
+  background-size: cover;
+}
+
+/* Article */
+article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Article_container {
+  background: rgba(0, 0, 0, 0.405);
+  backdrop-filter: blur(5px);
+  -webkit-box-shadow: -5px -5px 24px -5px rgba(255, 255, 255, 0.6) inset;
+  -moz-box-shadow: -5px -5px 24px -5px rgba(255, 255, 255, 0.6) inset;
+  box-shadow: -5px -5px 24px -5px rgba(255, 255, 255, 0.6) inset;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Article_container__List {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Text__Mateus */
+.Article_container__Text {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 2em;
+  margin-left: 5px;
+}
+p {
+  font-size: 2em;
+  margin-left: 5px;
+  align-self: flex-start;
+}
+.Article_container hr {
+  width: 50%;
+  height: 3px;
+  background: white;
+  margin-left: 5px;
+  margin-bottom: 5%;
+  align-self: flex-start;
+}
+ul {
+  font-size: 1.75em;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 5%;
+  align-self: center;
+}
+ul li {
+  margin-left: 3%;
+}
+.Article_container__Text_P__2 {
+  margin-top: 35%;
+}
+.Fixed_Lags {
+  margin-top: 5%;
+}
+
+/* Logo_Mateus */
+.Logo_Mateus {
+  width: 230px;
+  height: 120px;
+}
+
+/* Img/Mixer */
+.Mixer_Concrete {
+  width: 100%;
+  height: 70%;
+  margin-top: 15%;
+}
+.Mixer_Concrete_2 {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+}
+.Mixer_Concrete_3 {
+  width: 100%;
+  height: 90%;
+  margin-top: 5%;
+}
+.Article_container__Img_Mixer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Article_container__List_Img_Mixer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  body,
+  html {
+    background-size: inherit;
+  }
+  article {
+    flex-direction: column;
+  }
+  .Article_container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .Article_container br {
+    display: none;
+  }
+  .Article_container__Text_P__2 {
+    margin-top: 0;
+  }
+  .Article_container p {
+    align-self: normal;
+  }
+  .Article_container hr {
+    margin: 0 auto;
+  }
+  .swiper {
+    width: calc(200px + 300 * (100vw / 1200));
+    height: 100%;
+  }
+  @media screen and (max-height: 600px) {
+    .Article_container {
+      font-size: 0.5em;
+    }
+    .Article_container ul {
+      margin-top: 1%;
+    }
+    .Article_container hr {
+      width: 30%;
+      height: 0.5px;
+    }
+    .Fixed_Lags {
+      margin-top: 0%;
+    }
+  }
+  @media screen and (max-height: 600px) {
+    .Article_container__List_Img_Mixer {
+      display: inline;
+    }
+    .Article_container__Img_Mixer {
+      display: inline;
+      height: 70%;
+    }
+    .swiper {
+      height: 70%;
+    }
+  }
+  @media screen and (max-width: 270px) {
+    * {
+      display: none;
+    }
+  }
+}
